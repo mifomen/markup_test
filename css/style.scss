@@ -1,0 +1,29 @@
+@import 'event';
+@import 'blocks/description';
+@import 'blocks/intro';
+@import 'blocks/program';
+@import 'blocks/gallery';
+@import 'blocks/sponsors';
+@import 'blocks/map';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}

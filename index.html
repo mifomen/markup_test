@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>The Darkberries concert</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+  <section class="intro">
+    <header class="header">
+      <div class="wrapper">
+        <a href="#" class="logo">CompanyName</a>
+        <nav class="navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item"><a href="#" class="navigation__link">About</a></li>
+            <li class="navigation__item"><a href="#" class="navigation__link">Sponsors</a></li>
+            <li class="navigation__item"><a href="#" class="navigation__link">Programme</a></li>
+          </ul>
+        </nav>
+        <div class="toggle-lang">
+          <a href="#" class="toggle-lang__link toggle-lang__link--eng toggle-lang__active">En</a>
+          <a href="#" class="toggle-lang__link toggle-lang__link--rus">Ru</a>
+        </div>
+      </div>
+    </header>
+    <div class="wrapper">
+      <div class="countdown"> </div>
+
+      <div class="information-block">
+        <div class="information-block__description">
+          <h1 class="event-title">Fascinating Event</h1>
+          <p class="event-description">
+            Concert and presentation of the new album «So Many Sounds In My Head»
+          </p>
+        </div>
+        <div class="information-block__time">
+          <p class="information-block__item information-block__item--date"> Jun 14 | Saturday</p>
+          <p class="information-block__item information-block__item--tme"> 21.00 – 00.00</p>
+          <p class="information-block__item information-block__item--place"> Projector Hall</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="description">
+    <p class="description-participator">
+      The presentation of a new album of The Darkberries will be held on June 14 of 2018 in Projector Hall. This album will be a new turn in the group's work. The program will also have already familiar and most popular tracks.
+    </p>
+  </section>
+
+
+
+
+
+<script src="js/jquery.countdown.min.js"></script>
+<script>
+  
+  $('.countdown').countdown('2018/09/25 00:09:00', function(event) {
+ var $this = $(this).html(event.strftime(''
+   + '<div class="date">%m <span>Months</span></div>  '
+   + '<div class="date">%n <span>Days</span></div> '
+   + '<div class="date">%H <span>Hours</span></div>  '
+   + '<div class="date">%M <span>Minutes</span></div>  '
+   + '<div class="date">%S <span>Seconds</span></div> '));
+});
+
+</script>
+</body>
+</html>
