@@ -1,0 +1,115 @@
+.program {
+  padding-top: 120px;
+
+  .section-title {
+    margin-bottom: 30px;
+  }
+}
+
+.program-days {
+  text-align: center;
+  margin-bottom: 70px;
+
+  &__day {
+    display: inline-block;
+    vertical-align: text-top;
+    font-size: 16px;
+    font-weight: 700;
+    color: #000000;
+    padding: 14px 0;
+    max-width: 170px;
+    width: 100%;
+    border: 2px solid #000000;
+    transition: all .5s ease;
+
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+
+    &:hover {
+      /*border-radius: 55px;*/
+      box-shadow: 0 15px 25px -7px rgba(0, 0, 0, .4);
+    }
+  }
+
+  .active-day {
+    color: #ffffff;
+    background-color: #4c45d6;
+    border-color: transparent;
+  }
+}
+
+.program-list {
+	max-width: 970px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 100px;
+
+  &__item {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    border-top: 1px solid #d3d3d3;
+
+    &:last-child {
+      border-bottom: 1px solid #d3d3d3;
+    }
+  }
+
+  &__time {
+    font-size: 20px;
+    line-height: 27px;
+    font-weight: 600;
+    max-width: 135px;
+    width: 100%;
+  }
+
+  &__information {
+    margin-left: 175px;
+  }
+
+  &__title {
+    font-size: 26px;
+    line-height: 32px;
+    font-weight: 600;
+  }
+
+  &__description {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 300;
+  }
+}
+
+.speaker {
+
+  display: flex;
+  align-items: center;
+
+  margin: 50px 0;
+  
+  img {
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+
+  &__information {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 300;
+  }
+
+  &__name {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 700;
+  }
+
+  &__company {
+    font-size: 18px;
+    line-height: 28px;
+    color: #320afc;
+    font-weight: 300;
+  }
+}

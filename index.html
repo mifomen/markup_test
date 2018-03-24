@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>The Darkberries concert</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="swiper/swiper.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
@@ -43,11 +44,102 @@
     </div>
   </section>
   <section class="description">
-    <p class="description-participator">
-      The presentation of a new album of The Darkberries will be held on June 14 of 2018 in Projector Hall. This album will be a new turn in the group's work. The program will also have already familiar and most popular tracks.
-    </p>
+    <div class="wrapper">
+      <p class="description-participator">
+        The presentation of a new album of The Darkberries will be held on June 14 of 2018 in Projector Hall. This album will be a new turn in the group's work. The program will also have already familiar and most popular tracks.
+      </p>
+    </div>
   </section>
-
+  <section class="sponsors">
+    <div class="wrapper">
+      <h2 class="section-title">Our partners</h2>
+      <p class="section-description">
+        If you are interested in becoming a partner or sponsor, please feel free to write us.
+      </p>
+      <div class="sponsors__list">
+        <div class="sponsors__item sponsors__item--sponsor1"></div>
+        <div class="sponsors__item sponsors__item--sponsor2"></div>
+        <div class="sponsors__item sponsors__item--sponsor3"></div>
+        <div class="sponsors__item sponsors__item--sponsor4"></div>
+        <div class="sponsors__item sponsors__item--sponsor5"></div>
+      </div>
+    </div>
+  </section>
+  <section class="gallery">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="img/slider/gallery1.jpeg" alt="laptop, window, flowers">
+        </div>
+        <div class="swiper-slide">
+          <img src="img/slider/gallery2.jpeg" alt="books, vase, table">
+        </div>
+        <div class="swiper-slide">
+          <img src="img/slider/gallery3.jpeg" alt="notebook, pencils">
+        </div>
+        <div class="swiper-slide">
+          <img src="img/slider/gallery4.jpeg" alt="coffee, table, office supplies">
+        </div>
+      </div>
+      <!-- Add Pagination -->
+      <!-- <div class="swiper-pagination"></div> -->
+    </div>
+  </section>
+  <section class="program">
+    <div class="wrapper">
+      <div class="program-days">
+        <a href="#" class="program-days__day program-days__day--1 active-day">Day 1</a>
+        <a href="#" class="program-days__day program-days__day--2">Day 2</a>
+      </div>
+      <h2 class="section-title">Conference Program</h2>
+      <p class="section-description">Tuesday, March 14</p>
+      <ul class="program-list">
+        <li class="program-list__item">
+          <span class="program-list__time">08:00 – 08:30</span>
+          <div class="program-list__information">
+            <h3 class="program-list__title">Opening the Conference</h3>
+          </div>
+        </li>
+        <li class="program-list__item">
+          <span class="program-list__time">08:30 – 10:00</span>
+          <div class="program-list__information">
+            <h3 class="program-list__title">
+              Talks about self-development in design and revolutions in minds at the begining of 20's
+            </h3>
+            <div class="speaker">
+              <p class="speaker__information">
+                <span class="speaker__name">Alex Larkins,</span> projects manager in <a href="#" class="speaker__company">Pixels</a>
+              </p>
+            </div>
+            <p class="program-list__description">
+              How to be a graphic designer and not to lose your soul. Alex will share his experience about the process of making himself as a professional, ups and downs, searching of personal style and aproash. Also there will be a conversation of controversial points in whole conception of design like: what if it is not so hot replica of decree of nature?
+            </p>
+          </div>
+        </li>
+        <li class="program-list__item">
+          <span class="program-list__time">10:15 – 11:30</span>
+          <div class="program-list__information">
+            <h3 class="program-list__title">Morning workshop</h3>
+            <div class="speaker">
+              <img src="img/speakers/program-speaker.jpg" alt="speaker photo" width="50" height="50">
+              <p class="speaker__information">
+                <span class="speaker__name">Sarah Lewin,</span> creative director in <a href="#" class="speaker__company">DD agency</a>
+              </p>
+            </div>
+            <p class="program-list__description">
+              Lettering workshop with guru of pens, brushes, colapens, bamboo dip pens and other instrunents. Sarah will introduce you different styles in writing and show you how to create your own handmade lettering tools.
+            </p>
+          </div>
+        </li>
+        <li class="program-list__item">
+          <span class="program-list__time">11:30 – 12:30</span>
+          <div class="program-list__information">
+            <h3 class="program-list__title">Dinner</h3>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
 
 
 
@@ -63,7 +155,14 @@
    + '<div class="date">%M <span>Minutes</span></div>  '
    + '<div class="date">%S <span>Seconds</span></div> '));
 });
-
+</script>
+<script src="swiper/swiper.min.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 3,
+      spaceBetween: 120,
+      centeredSlides: true
+    });
 </script>
 </body>
 </html>
