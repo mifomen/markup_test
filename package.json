@@ -1,0 +1,27 @@
+{
+  "name": "markup_test",
+  "version": "1.0.0",
+  "description": "You have to replicate the page located here: http://project282874.tilda.ws/page2516952.html",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gaponchuk/markup_test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gaponchuk/markup_test/issues"
+  },
+  "homepage": "https://github.com/Gaponchuk/markup_test#readme",
+  "devDependencies": {
+    "browser-sync": "^2.23.6",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-notify": "^3.2.0",
+    "gulp-sass": "^3.2.1",
+    "gulp-sourcemaps": "^2.6.4"
+  }
+}
