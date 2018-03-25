@@ -1,15 +1,46 @@
 .sponsors {
-  padding: 160px 0 160px;
+  padding: 160px 0 170px;
+
+  .section-description {
+    margin-bottom: 130px;
+  }
+
+  @media screen and (max-width: 640px) {
+
+    padding: 150px 0 170px;
+
+    /*.section-title {
+      font-size: 30px;
+      line-height: 37px;
+      margin-bottom: 20px;
+    }*/
+
+    /*.section-description {
+      font-size: 20px;
+      line-height: 28px;
+      margin-bottom: 70px;
+    }*/
+  }
+
+  @media screen and (max-width: 400px) {
+     padding: 90px 0 90px;
+
+    .section-description {
+      margin-bottom: 50px;
+    }
+  }
 	
   &__list {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     width: 100%;
   }
 
   &__item {
     position: relative;
     max-width: 160px;
+    min-width: 160px;
     width: 20%;
     height: 160px;
     padding: 20px;
@@ -38,9 +69,5 @@
     &--sponsor5 {
       background-image: url('../../img/sponsors/peppermint.jpg');
     }
-  }
-
-  .section-description {
-    margin-bottom: 130px;
   }
 }
