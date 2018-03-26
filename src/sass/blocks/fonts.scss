@@ -1,0 +1,20 @@
+$defaultFont:'Arial', 'Helvetica', sans-serif;
+$fontStyle: normal;
+$fontR: 'Roboto', $defaultFont ;
+
+
+$fontDisplay: auto; //block swap auto
+
+// @font-face {
+//   font-family: 'Roboto';
+//   src: url(/fonts/roboto.woff2);
+//   font-display: $fontDisplay;
+//   font-style: $fontStyle;
+// }
+// @font-face {
+//   font-family: 'Roboto';
+//   font-style: normal;
+//   font-weight: 300;
+//   src: local('Roboto Light'), local('Roboto-Light'), local('sans-serif-light'), url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmSU5fCRc4AMP6lbBP.woff2) format('woff2');
+//   unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+// }

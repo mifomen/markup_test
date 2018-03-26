@@ -1,5 +1,14 @@
+@import "blocks/fonts.scss";
+body {
+  margin:0;
+  padding: 0;
+  font-family: $fontR;
+  height: 5000px;
+}
+
+@import "blocks/variabls.scss";
 @import "blocks/header.scss";
-@import "blocks/description.scss";
+@import "blocks/main.scss";
 @import "blocks/gallery.scss";
 @import "blocks/intro.scss";
 @import "blocks/map.scss";
@@ -9,20 +18,3 @@
 // @mobile: ~"(max-width: 600px)";
 // @desktop: ~"(min-width: 1120px)";
 
-$mobile: (max-width: 500px);
-$tablet: (min-width: 720px);
-// $m1: (#{$mobile});
-$n1:~"(@media  #{$mobile})";
-.mifomen {
-  display: block;
-  width: 500px;
-  height: 500px;
-  background-color: rgba(255,255,5,1);
-  content: 'mifomen';
-$n1 {
-    background-color: darkorange;
-  }
-  @media #{$tablet} {
-    background-color: black;
-  }
-}
