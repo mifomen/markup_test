@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Darkberries concert</title>
+  <link rel="stylesheet" href="swiper/swiper.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+  <section class="intro">
+    <header id="header" class="header">
+      <div class="wrapper">
+        <a href="#" class="logo">CompanyName</a>
+        <div class="mobile-block">
+          <nav class="navigation">
+            <ul class="navigation__list">
+              <li class="navigation__item"><a href="#about" class="navigation__link">About</a></li>
+              <li class="navigation__item"><a href="#sponsor" class="navigation__link">Sponsors</a></li>
+              <li class="navigation__item"><a href="#program" class="navigation__link">Programme</a></li>
+            </ul>
+          </nav>
+          <div class="toggle-lang">
+            <a href="#" class="toggle-lang__link toggle-lang__link--eng toggle-lang__active">En</a>
+            <a href="#" class="toggle-lang__link toggle-lang__link--rus">Ru</a>
+          </div>
+        </div>
+        <div class="mobile-btn">
+          <span class="mobile-btn__item"></span>
+          <span class="mobile-btn__item"></span>
+          <span class="mobile-btn__item"></span>
+        </div>
+      </div>
+    </header>
+    <div id="about" class="wrapper">
+      <div class="countdown"> </div>
+      <div class="information-block">
+        <div class="information-block__description">
+          <h1 class="event-title">Fascinating Event</h1>
+          <p class="event-description">
+            Concert and presentation of the new album «So Many Sounds In My Head»
+          </p>
+        </div>
+        <div class="information-block__time">
+          <p class="information-block__item information-block__item--date"> Jun 14 | Saturday</p>
+          <p class="information-block__item information-block__item--tme"> 21.00 – 00.00</p>
+          <p class="information-block__item information-block__item--place"> Projector Hall</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="description">
+    <div class="wrapper">
+      <p class="description-participator">
+        The presentation of a new album of The Darkberries will be held on June 14 of 2018 in Projector Hall. This album will be a new turn in the group's work. The program will also have already familiar and most popular tracks.
+      </p>
+    </div>
+  </section>
+  <section id="sponsor" class="sponsors">
+    <div class="wrapper">
+      <h2 class="section-title">Our partners</h2>
+      <p class="section-description">
+        If you are interested in becoming a partner or sponsor, please feel free to write us.
+      </p>
+      <div class="sponsors__list">
+        <div class="sponsors__item sponsors__item--sponsor1"></div>
+        <div class="sponsors__item sponsors__item--sponsor2"></div>
+        <div class="sponsors__item sponsors__item--sponsor3"></div>
+        <div class="sponsors__item sponsors__item--sponsor4"></div>
+        <div class="sponsors__item sponsors__item--sponsor5"></div>
+      </div>
+    </div>
+  </section>
+  <section class="gallery">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="img/slider/gallery1.jpeg" alt="laptop, window, flowers">
+        </div>
+        <div class="swiper-slide">
+          <img src="img/slider/gallery2.jpeg" alt="books, vase, table">
+        </div>
+        <div class="swiper-slide">
+          <img src="img/slider/gallery3.jpeg" alt="notebook, pencils">
+        </div>
+        <div class="swiper-slide">
+          <img src="img/slider/gallery4.jpeg" alt="coffee, table, office supplies">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="program" class="program">
+    <div class="wrapper">
+      <div class="program-days">
+        <a href="#" class="program-days__day program-days__day--1 active-day" data-info="#day1">Day 1</a>
+        <a href="#" class="program-days__day program-days__day--2" data-info="#day2">Day 2</a>
+      </div>
+      <h2 class="section-title">Conference Program</h2>
+      <div class="program-day active-program" id="day1">
+        <p class="section-description">Tuesday, March 14</p>
+        <ul class="program-list">
+          <li class="program-list__item">
+            <span class="program-list__time">08:00 – 08:30</span>
+            <div class="program-list__information">
+              <h3 class="program-list__title">Opening the Conference</h3>
+            </div>
+          </li>
+          <li class="program-list__item">
+            <span class="program-list__time">08:30 – 10:00</span>
+            <div class="program-list__information">
+              <h3 class="program-list__title">
+                Talks about self-development in design and revolutions in minds at the begining of 20's
+              </h3>
+              <div class="speaker">
+                <p class="speaker__information">
+                  <span class="speaker__name">Alex Larkins,</span> projects manager in <a href="#" class="speaker__company">Pixels</a>
+                </p>
+              </div>
+              <p class="program-list__description">
+                How to be a graphic designer and not to lose your soul. Alex will share his experience about the process of making himself as a professional, ups and downs, searching of personal style and aproash. Also there will be a conversation of controversial points in whole conception of design like: what if it is not so hot replica of decree of nature?
+              </p>
+            </div>
+          </li>
+          <li class="program-list__item">
+            <span class="program-list__time">10:15 – 11:30</span>
+            <div class="program-list__information">
+              <h3 class="program-list__title">Morning workshop</h3>
+              <div class="speaker">
+                <img src="img/speakers/program-speaker.jpg" alt="speaker photo" width="50" height="50">
+                <p class="speaker__information">
+                  <span class="speaker__name">Sarah Lewin,</span> creative director in <a href="#" class="speaker__company">DD agency</a>
+                </p>
+              </div>
+              <p class="program-list__description">
+                Lettering workshop with guru of pens, brushes, colapens, bamboo dip pens and other instrunents. Sarah will introduce you different styles in writing and show you how to create your own handmade lettering tools.
+              </p>
+            </div>
+          </li>
+          <li class="program-list__item">
+            <span class="program-list__time">11:30 – 12:30</span>
+            <div class="program-list__information">
+              <h3 class="program-list__title">Dinner</h3>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="program-day" id="day2">
+        <p class="section-description">Wednesday, March 15</p>
+        <ul class="program-list">
+          <li class="program-list__item">
+            <span class="program-list__time">08:00 – 08:30</span>
+            <div class="program-list__information">
+              <h3 class="program-list__title">Opening the Conference</h3>
+            </div>
+          </li>
+          <li class="program-list__item">
+            <span class="program-list__time">08:30 – 10:00</span>
+            <div class="program-list__information">
+              <h3 class="program-list__title">
+                Talks about self-development in design and revolutions in minds at the begining of 20's
+              </h3>
+              <div class="speaker">
+                <img src="img/speakers/program-speaker-2.jpg" alt="speaker photo" width="50" height="50">
+                <p class="speaker__information">
+                  <span class="speaker__name">Alex Larkins,</span> projects manager in <a href="#" class="speaker__company">Pixels</a>
+                </p>
+              </div>
+              <p class="program-list__description">
+                How to be a graphic designer and not to lose your soul. Alex will share his experience about the process of making himself as a professional, ups and downs, searching of personal style and aproash. Also there will be a conversation of controversial points in whole conception of design like: what if it is not so hot replica of decree of nature?
+              </p>
+            </div>
+          </li>
+          <li class="program-list__item">
+            <span class="program-list__time">10:15 – 11:30</span>
+            <div class="program-list__information">
+              <h3 class="program-list__title">Morning workshop</h3>
+              <div class="speaker">
+                <p class="speaker__information">
+                  <span class="speaker__name">Sarah Lewin,</span> creative director in <a href="#" class="speaker__company">DD agency</a>
+                </p>
+              </div>
+              <p class="program-list__description">
+                Lettering workshop with guru of pens, brushes, colapens, bamboo dip pens and other instrunents. Sarah will introduce you different styles in writing and show you how to create your own handmade lettering tools.
+              </p>
+            </div>
+          </li>
+          <li class="program-list__item">
+            <span class="program-list__time">11:30 – 12:30</span>
+            <div class="program-list__information">
+              <h3 class="program-list__title">Dinner</h3>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <h2 class="section-title">Event Key Topics</h2>
+      <ul class="key-topics">
+        <li class="key-topics__item">
+          <input id="one" type="checkbox">
+          <label for="one" class="key-topics__label">Identity &amp; Access Management (IAM) 2020 Cognitive Identity</label>
+          <ul class="key-topics__list">
+            <li class="key-topics__subparagraph">PxM: Privileged Account Management.</li>
+            <li class="key-topics__subparagraph">The Future of Authentication and On-Premise IAM.</li>
+            <li class="key-topics__subparagraph">IDaaS: From SSO to comprehensive approaches.</li>
+            <li class="key-topics__subparagraph">On Premise, in the Cloud &amp; Hybrid.</li>
+            <li class="key-topics__subparagraph">IAM Managed Services: Should we get rid now of our On-Premise IAM?</li>
+            <li class="key-topics__subparagraph">Creating an IAM Services Blueprint that Works.</li>
+            <li class="key-topics__subparagraph">Identity Standards &amp; Trust Models.</li>
+            <li class="key-topics__subparagraph">The role of OpenID Connect &amp; OAuth2 for PSD2 compliant infrastructures.</li>
+          </ul>
+        </li>
+        <li class="key-topics__item">
+          <input id="two" type="checkbox">
+          <label for="two" class="key-topics__label">Customer Identity Management (CIAM) as a Business Enabler in the Age of Digital Transformation</label>
+          <ul class="key-topics__list">
+            <li class="key-topics__subparagraph">Innovating the Journey from unknown visitors to loyal customers.</li>
+            <li class="key-topics__subparagraph">Balancing User Experience, Privacy, and Security for the Connected Consumer.</li>
+            <li class="key-topics__subparagraph">Managing Consent: Compliance Challenges &amp; Audit Requirements.</li>
+            <li class="key-topics__subparagraph">Performance, availability &amp; resilience of CIAM infrastructures.</li>
+            <li class="key-topics__subparagraph">PSD2 and how it will influence the way you authenticate your visitors.</li>
+          </ul>
+        </li>
+        <li class="key-topics__item">
+          <input id="three" type="checkbox">
+          <label for="three" class="key-topics__label">Privacy &amp; GDPR</label>
+          <ul class="key-topics__list">
+            <li class="key-topics__subparagraph">Solving Your GDPR Compliance Challenges.</li>
+            <li class="key-topics__subparagraph">Privacy-by-Design &amp; Consumer/Customer Identity: The Foundations for Globally Compliant Marketing Automation.</li>
+            <li class="key-topics__subparagraph">Identity Governance in the Light of GDPR.</li>
+          </ul>
+        </li>
+      </ul>
+      <h2 class="section-title">Key Speakers</h2>
+      <div class="speakers">
+        <figure class="speaker-block">
+          <img class="speaker-block__img" src="img/speakers/Carlos_Lott.jpg" alt="Carlos Lott">
+          <figcaption class="speaker-block__description">Carlos Lott</figcaption>
+          <p class="speaker-block__text">Marketing Director, China Petroleum &amp; Chemical Corporation</p>
+        </figure>
+        <figure class="speaker-block">
+          <img class="speaker-block__img" src="img/speakers/Carlos_Stark.jpeg" alt="Carlos Stark">
+          <figcaption class="speaker-block__description">Carlos Stark</figcaption>
+          <p class="speaker-block__text">Customers Support, Microsoft</p>
+        </figure>
+        <figure class="speaker-block">
+          <img class="speaker-block__img" src="img/speakers/Julia_Bush.png" alt="Julia Bush">
+          <figcaption class="speaker-block__description">Julia Bush</figcaption>
+          <p class="speaker-block__text">Design Director, IBM</p>
+        </figure>
+        <figure class="speaker-block">
+          <img class="speaker-block__img" src="img/speakers/Max_Holden.png" alt="Max Holden">
+          <figcaption class="speaker-block__description">Max Holden</figcaption>
+          <p class="speaker-block__text">Founder &amp; Art Director, Apple</p>
+        </figure>
+      </div>
+    </div>
+  </section>
+  <section id="map" class="map"></section>
+  <script src="js/javascript.js"></script>
+  <script src="js/map.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCL_8BzhWijDnxRViCzXvfwEdO4-rkw5Tk&callback=initMap" defer></script>
+  <script src="js/jquery.countdown.min.js"></script>
+  <script src="js/countdown.js"></script>
+  <script src="swiper/swiper.min.js"></script>
+  <script src="js/swiper-tuning.js"></script>
+</body>
+</html>

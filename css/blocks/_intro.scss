@@ -1,0 +1,371 @@
+.intro {
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+	background-image: linear-gradient(top, rgba(0,0,0,0.40), rgba(0,0,0,0.60)), url('../../img/background.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  background-size: cover;
+
+  .wrapper {
+    padding-top: 20vh;
+  }
+}
+
+/* logo */
+.logo {
+  font-size: 24px;
+  font-weight: 600;
+
+  @media screen and (max-width: 900px) {
+    font-size: 16px;
+  }
+}
+
+
+/* header */
+.header {
+  width: 100%;
+  height: 100px;
+  position: fixed;
+  z-index: 5;
+  transition: all .5s ease;
+
+  @media screen and (max-width: 900px) {
+    height: 50px;
+  }
+
+  > .wrapper {
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 0;
+
+    @media screen and (max-width: 900px) {
+      position: relative;
+      justify-content: center;
+    }
+  }
+}
+
+.mobile-btn {
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 50px;
+  height: 50px;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  background-color: #000000;
+  cursor: pointer;
+
+  @media screen and (max-width: 900px) {
+    display: flex;
+  }
+
+  &__item {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    transition: all .5s ease;
+  }
+}
+
+.active-header {
+  background-color: $active_header;
+  box-shadow: rgba(0,0,0,.13) 0 4px 16px;
+}
+
+.mobile-block {
+  display: flex;
+  margin-left: auto;
+  transition: transform .5s ease;
+
+  @media screen and (max-width: 900px) {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    min-height: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 20vh;
+    align-items: center;
+    top: 49px;
+    left: 0;
+    background-color: $mobile_nav_bg;
+    transform: translateX(-100%);
+  }
+}
+
+.hidden {
+  transition: visibility .1s ease;
+  visibility: hidden;
+}
+
+.rotate-left {
+  transform-origin: left;
+  transform: rotate(43deg);
+  margin-left: 3px;
+}
+
+.rotate-right {
+  transform-origin: left;
+  transform: rotate(-43deg);
+  margin-left: 3px;
+}
+
+.active-menu {
+  transform: translateX(0);
+}
+
+
+/* navigation */
+.navigation {
+  margin-left: auto;
+  margin-right: 25px;
+
+  @media screen and (max-width: 900px) {
+    margin: 0;
+  }
+
+  &__list {
+    display: flex;
+    list-style-type: none;
+
+    @media screen and (max-width: 900px) {
+      flex-direction: column;
+    }
+  }
+
+  &__item {
+    margin-right: 25px;
+
+    @media screen and (max-width: 900px) {
+      margin-right: 0;
+      text-align: center;
+      margin: 5vh;
+    }
+  }
+
+  &__link {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    color: $nav_link;
+
+    @media screen and (max-width: 900px) {
+      display: inline-block;
+      font-size: 4vh;
+      position: relative;
+
+      &::after {
+        position: absolute;
+        content: "";
+        width: 0;
+        height: 2px;
+        background-color: #032123;
+        bottom: -1vh;
+        left: 0;
+        transition: width .5s ease;
+      }
+
+      &:hover::after {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.active-link {
+  opacity: .7;
+}
+
+/* lang */
+.toggle-lang {
+  font-family: 'Arial', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  
+  &__link {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+    &:not(:first-child) {
+      margin-left: 10px;
+    }
+  }
+
+  &__active {
+    font-weight: 300;
+    opacity: 0.5;
+  }
+}
+
+
+/* countdown */
+.countdown {
+  max-width: 997px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 50px 0;
+  text-align: center;
+
+  display: flex;
+  justify-content: space-around;
+}
+
+.date {
+  position: relative;
+  font-size: 32px;
+  text-align: center;
+  display: inline-block;
+  color: $countdown_color;
+
+  &:not(:last-child) {
+    padding-right: 9%;
+
+    @media screen and (max-width: 640px) {
+      padding-right: 0;
+    }
+  }
+
+  &:not(:last-child)::after {
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+
+    @media screen and (max-width: 640px) {
+      width: 0;
+      height: 0;
+    }
+  }
+
+  span {
+    font-size: 14px;
+    display: block;
+  }
+}
+
+
+/* information block */
+.information-block {
+  max-width: 1060px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 4vh;
+  padding: 50px 0;
+  color: #ffffff;
+
+  @media screen and (max-width: 960px) {
+    max-width: 640px;
+    flex-direction: column;
+    align-items: flex-start;
+
+  }
+
+  &__description {
+    max-width: 660px;
+
+    @media screen and (max-width: 960px) {
+      margin-bottom: 65px;
+    }
+
+    @media screen and (max-width: 640px) {
+      .event-title {
+        font-size: 32px;
+        line-height: 37px;
+        margin-bottom: 15px;
+      }
+
+      .event-description {
+        font-size: 18px;
+        line-height: 26px;
+      }
+    }
+  }
+
+  &__time {
+    max-width: 360px;
+  }
+
+  &__item {
+    position: relative;
+    font-size: 20px;
+    line-height: 31px;
+    font-weight: 300;
+    padding-left: 85px;
+    text-align: left;
+
+    @media screen and (max-width: 640px) {
+      font-size: 16px;
+      line-height: 23px;
+    }
+
+    &:not(:first-child) {
+      margin-top: 60px;
+
+      @media screen and (max-width: 640px) {
+        margin-top: 45px;
+      }
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 50px;
+      height: 50px;
+      top: 50%;
+      left: 0;
+      transform: translate(0, -50%);
+      background-position: center;
+      background-repeat: no-repeat;
+      -webkit-background-size: cover;
+      background-size: cover;
+
+      @media screen and (max-width: 640px) {
+        width: 40px;
+        height: 40px;
+      }
+    }
+
+    &--date::before {
+      background-image: url(../../img/icon/calendar.svg);
+    }
+
+    &--tme::before {
+      background-image: url(../../img/icon/clock.svg);
+    }
+
+    &--place::before {
+      background-image: url(../../img/icon/marker.svg);
+    }
+  }
+}
+
+.event-title {
+  font-size: 72px;
+  line-height: 84px;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+.event-description {
+  font-size: 22px;
+  line-height: 34px;
+  font-weight: 300;
+  max-width: 560px;
+}
