@@ -1,5 +1,10 @@
     var swiper = new Swiper('.swiper-container', {
-      slidesPerView: 1,
+      slidesPerView: 2,
       spaceBetween: 15,
-      centeredSlides: true
+      centeredSlides: true,
+      autoplay: {
+        delay: 1000,
+        disableOnInteraction: false,
+      },
+      speed: 4000,
     });
