@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>The Darkberries concert</title>
-  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="swiper/swiper.min.css">
+  <link rel="stylesheet" href="css/style.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
@@ -33,9 +33,8 @@
         </div>
       </div>
     </header>
-    <div class="wrapper">
+    <div id="about" class="wrapper">
       <div class="countdown"> </div>
-
       <div class="information-block">
         <div class="information-block__description">
           <h1 class="event-title">Fascinating Event</h1>
@@ -51,7 +50,7 @@
       </div>
     </div>
   </section>
-  <section id="about" class="description">
+  <section class="description">
     <div class="wrapper">
       <p class="description-participator">
         The presentation of a new album of The Darkberries will be held on June 14 of 2018 in Projector Hall. This album will be a new turn in the group's work. The program will also have already familiar and most popular tracks.
@@ -89,8 +88,6 @@
           <img src="img/slider/gallery4.jpeg" alt="coffee, table, office supplies">
         </div>
       </div>
-      <!-- Add Pagination -->
-      <!-- <div class="swiper-pagination"></div> -->
     </div>
   </section>
   <section id="program" class="program">
@@ -148,7 +145,6 @@
           </li>
         </ul>
       </div>
-<!-- program second day -->
       <div class="program-day" id="day2">
         <p class="section-description">Wednesday, March 15</p>
         <ul class="program-list">
@@ -197,101 +193,75 @@
           </li>
         </ul>
       </div>
+      <h2 class="section-title">Event Key Topics</h2>
+      <ul class="key-topics">
+        <li class="key-topics__item">
+          <input id="one" type="checkbox">
+          <label for="one" class="key-topics__label">Identity &amp; Access Management (IAM) 2020 Cognitive Identity</label>
+          <ul class="key-topics__list">
+            <li class="key-topics__subparagraph">PxM: Privileged Account Management.</li>
+            <li class="key-topics__subparagraph">The Future of Authentication and On-Premise IAM.</li>
+            <li class="key-topics__subparagraph">IDaaS: From SSO to comprehensive approaches.</li>
+            <li class="key-topics__subparagraph">On Premise, in the Cloud &amp; Hybrid.</li>
+            <li class="key-topics__subparagraph">IAM Managed Services: Should we get rid now of our On-Premise IAM?</li>
+            <li class="key-topics__subparagraph">Creating an IAM Services Blueprint that Works.</li>
+            <li class="key-topics__subparagraph">Identity Standards &amp; Trust Models.</li>
+            <li class="key-topics__subparagraph">The role of OpenID Connect &amp; OAuth2 for PSD2 compliant infrastructures.</li>
+          </ul>
+        </li>
+        <li class="key-topics__item">
+          <input id="two" type="checkbox">
+          <label for="two" class="key-topics__label">Customer Identity Management (CIAM) as a Business Enabler in the Age of Digital Transformation</label>
+          <ul class="key-topics__list">
+            <li class="key-topics__subparagraph">Innovating the Journey from unknown visitors to loyal customers.</li>
+            <li class="key-topics__subparagraph">Balancing User Experience, Privacy, and Security for the Connected Consumer.</li>
+            <li class="key-topics__subparagraph">Managing Consent: Compliance Challenges &amp; Audit Requirements.</li>
+            <li class="key-topics__subparagraph">Performance, availability &amp; resilience of CIAM infrastructures.</li>
+            <li class="key-topics__subparagraph">PSD2 and how it will influence the way you authenticate your visitors.</li>
+          </ul>
+        </li>
+        <li class="key-topics__item">
+          <input id="three" type="checkbox">
+          <label for="three" class="key-topics__label">Privacy &amp; GDPR</label>
+          <ul class="key-topics__list">
+            <li class="key-topics__subparagraph">Solving Your GDPR Compliance Challenges.</li>
+            <li class="key-topics__subparagraph">Privacy-by-Design &amp; Consumer/Customer Identity: The Foundations for Globally Compliant Marketing Automation.</li>
+            <li class="key-topics__subparagraph">Identity Governance in the Light of GDPR.</li>
+          </ul>
+        </li>
+      </ul>
+      <h2 class="section-title">Key Speakers</h2>
+      <div class="speakers">
+        <figure class="speaker-block">
+          <img class="speaker-block__img" src="img/speakers/Carlos_Lott.jpg" alt="Carlos Lott">
+          <figcaption class="speaker-block__description">Carlos Lott</figcaption>
+          <p class="speaker-block__text">Marketing Director, China Petroleum &amp; Chemical Corporation</p>
+        </figure>
+        <figure class="speaker-block">
+          <img class="speaker-block__img" src="img/speakers/Carlos_Stark.jpeg" alt="Carlos Stark">
+          <figcaption class="speaker-block__description">Carlos Stark</figcaption>
+          <p class="speaker-block__text">Customers Support, Microsoft</p>
+        </figure>
+        <figure class="speaker-block">
+          <img class="speaker-block__img" src="img/speakers/Julia_Bush.png" alt="Julia Bush">
+          <figcaption class="speaker-block__description">Julia Bush</figcaption>
+          <p class="speaker-block__text">Design Director, IBM</p>
+        </figure>
+        <figure class="speaker-block">
+          <img class="speaker-block__img" src="img/speakers/Max_Holden.png" alt="Max Holden">
+          <figcaption class="speaker-block__description">Max Holden</figcaption>
+          <p class="speaker-block__text">Founder &amp; Art Director, Apple</p>
+        </figure>
+      </div>
     </div>
   </section>
   <section id="map" class="map"></section>
-
-
-<script>
-  // background header on scroll
-  var head = document.getElementById('header');
-  var topHead = head.offsetTop;
-
-  function backgroundNav() {
-    if(window.scrollY > topHead) {
-      head.classList.add('active-header');
-    }
-    else {
-      head.classList.remove('active-header');
-      for( var i = 0; i < links.length; i++) {
-        links[i].classList.remove('active-link');
-      }
-    }
-  }
-
-  window.addEventListener('scroll', backgroundNav);
-
-
-  //toggle program for days
-  var day = document.querySelectorAll('.program-days__day');
-  var program = document.querySelectorAll('.program-day');
-
-  for(var i = 0; i < day.length; i++) {
-    day[i].addEventListener('click', function(e){
-    event.preventDefault();
-      for(var i = 0; i < day.length; i++) {
-        day[i].classList.remove('active-day');
-        program[i].classList.remove('active-program');
-      }
-      this.classList.add('active-day');
-      document.querySelector(this.getAttribute('data-info')).classList.add('active-program');
-    });
-  }
-
-  var burgerBtn = document.querySelector(".mobile-btn");
-  var mobileMenu = document.querySelector(".mobile-block");
-  var burgerItems = burgerBtn.querySelectorAll('.mobile-btn__item');
-  var links = document.querySelectorAll('.navigation__link');
-  var logo = document.querySelector('.logo');
-
-
-  burgerBtn.addEventListener('click', function(){
-    mobileMenu.classList.toggle('active-menu');
-    burgerItems[0].classList.toggle('rotate-left');
-    burgerItems[1].classList.toggle('hidden');
-    burgerItems[2].classList.toggle('rotate-right');
-
-    for( var i = 0; i < links.length; i++) {
-    links[i].addEventListener('click', function(){
-        mobileMenu.classList.remove('active-menu');
-        burgerItems[0].classList.remove('rotate-left');
-        burgerItems[1].classList.remove('hidden');
-        burgerItems[2].classList.remove('rotate-right');
-    }); 
-    };
-  }); 
-
-  if( window.innerWidth > 900) {
-    for( var i = 0; i < links.length; i++) {
-    links[i].addEventListener('click', function(){
-
-      for( var i = 0; i < links.length; i++) {
-        if(links[i].classList.contains('active-link')) {
-          links[i].classList.remove('active-link');
-        } else {
-          continue;
-        }
-      };
-      this.classList.add('active-link');
-      });
-    };
-  };
-
-  logo.addEventListener('click', function(){
-    for( var i = 0; i < links.length; i++) {
-      links[i].classList.remove('active-link');
-    }
-  });
-
-
-
-</script>
-
-<script src="js/map.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCL_8BzhWijDnxRViCzXvfwEdO4-rkw5Tk&callback=initMap" async defer></script>
-<script src="js/jquery.countdown.min.js"></script>
-<script src="js/countdown.js"></script>
-<script src="swiper/swiper.min.js"></script>
-<script src="js/swiper-tuning.js"></script>
+  <script src="js/javascript.js"></script>
+  <script src="js/map.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCL_8BzhWijDnxRViCzXvfwEdO4-rkw5Tk&callback=initMap" defer></script>
+  <script src="js/jquery.countdown.min.js"></script>
+  <script src="js/countdown.js"></script>
+  <script src="swiper/swiper.min.js"></script>
+  <script src="js/swiper-tuning.js"></script>
 </body>
 </html>
