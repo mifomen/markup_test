@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>The Darkberries concert</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="swiper/swiper.min.css">
@@ -9,19 +10,26 @@
 </head>
 <body>
   <section class="intro">
-    <header class="header">
+    <header id="header" class="header">
       <div class="wrapper">
         <a href="#" class="logo">CompanyName</a>
-        <nav class="navigation">
-          <ul class="navigation__list">
-            <li class="navigation__item"><a href="#" class="navigation__link">About</a></li>
-            <li class="navigation__item"><a href="#" class="navigation__link">Sponsors</a></li>
-            <li class="navigation__item"><a href="#" class="navigation__link">Programme</a></li>
-          </ul>
-        </nav>
-        <div class="toggle-lang">
-          <a href="#" class="toggle-lang__link toggle-lang__link--eng toggle-lang__active">En</a>
-          <a href="#" class="toggle-lang__link toggle-lang__link--rus">Ru</a>
+        <div class="mobile-block">
+          <nav class="navigation">
+            <ul class="navigation__list">
+              <li class="navigation__item"><a href="#about" class="navigation__link">About</a></li>
+              <li class="navigation__item"><a href="#sponsor" class="navigation__link">Sponsors</a></li>
+              <li class="navigation__item"><a href="#program" class="navigation__link">Programme</a></li>
+            </ul>
+          </nav>
+          <div class="toggle-lang">
+            <a href="#" class="toggle-lang__link toggle-lang__link--eng toggle-lang__active">En</a>
+            <a href="#" class="toggle-lang__link toggle-lang__link--rus">Ru</a>
+          </div>
+        </div>
+        <div class="mobile-btn">
+          <span class="mobile-btn__item"></span>
+          <span class="mobile-btn__item"></span>
+          <span class="mobile-btn__item"></span>
         </div>
       </div>
     </header>
@@ -43,14 +51,14 @@
       </div>
     </div>
   </section>
-  <section class="description">
+  <section id="about" class="description">
     <div class="wrapper">
       <p class="description-participator">
         The presentation of a new album of The Darkberries will be held on June 14 of 2018 in Projector Hall. This album will be a new turn in the group's work. The program will also have already familiar and most popular tracks.
       </p>
     </div>
   </section>
-  <section class="sponsors">
+  <section id="sponsor" class="sponsors">
     <div class="wrapper">
       <h2 class="section-title">Our partners</h2>
       <p class="section-description">
@@ -85,65 +93,199 @@
       <!-- <div class="swiper-pagination"></div> -->
     </div>
   </section>
-  <section class="program">
+  <section id="program" class="program">
     <div class="wrapper">
       <div class="program-days">
-        <a href="#" class="program-days__day program-days__day--1 active-day">Day 1</a>
-        <a href="#" class="program-days__day program-days__day--2">Day 2</a>
+        <a href="#" class="program-days__day program-days__day--1 active-day" data-info="#day1">Day 1</a>
+        <a href="#" class="program-days__day program-days__day--2" data-info="#day2">Day 2</a>
       </div>
       <h2 class="section-title">Conference Program</h2>
-      <p class="section-description">Tuesday, March 14</p>
-      <ul class="program-list">
-        <li class="program-list__item">
-          <span class="program-list__time">08:00 – 08:30</span>
-          <div class="program-list__information">
-            <h3 class="program-list__title">Opening the Conference</h3>
-          </div>
-        </li>
-        <li class="program-list__item">
-          <span class="program-list__time">08:30 – 10:00</span>
-          <div class="program-list__information">
-            <h3 class="program-list__title">
-              Talks about self-development in design and revolutions in minds at the begining of 20's
-            </h3>
-            <div class="speaker">
-              <p class="speaker__information">
-                <span class="speaker__name">Alex Larkins,</span> projects manager in <a href="#" class="speaker__company">Pixels</a>
+      <div class="program-day active-program" id="day1">
+        <p class="section-description">Tuesday, March 14</p>
+        <ul class="program-list">
+          <li class="program-list__item">
+            <span class="program-list__time">08:00 – 08:30</span>
+            <div class="program-list__information">
+              <h3 class="program-list__title">Opening the Conference</h3>
+            </div>
+          </li>
+          <li class="program-list__item">
+            <span class="program-list__time">08:30 – 10:00</span>
+            <div class="program-list__information">
+              <h3 class="program-list__title">
+                Talks about self-development in design and revolutions in minds at the begining of 20's
+              </h3>
+              <div class="speaker">
+                <p class="speaker__information">
+                  <span class="speaker__name">Alex Larkins,</span> projects manager in <a href="#" class="speaker__company">Pixels</a>
+                </p>
+              </div>
+              <p class="program-list__description">
+                How to be a graphic designer and not to lose your soul. Alex will share his experience about the process of making himself as a professional, ups and downs, searching of personal style and aproash. Also there will be a conversation of controversial points in whole conception of design like: what if it is not so hot replica of decree of nature?
               </p>
             </div>
-            <p class="program-list__description">
-              How to be a graphic designer and not to lose your soul. Alex will share his experience about the process of making himself as a professional, ups and downs, searching of personal style and aproash. Also there will be a conversation of controversial points in whole conception of design like: what if it is not so hot replica of decree of nature?
-            </p>
-          </div>
-        </li>
-        <li class="program-list__item">
-          <span class="program-list__time">10:15 – 11:30</span>
-          <div class="program-list__information">
-            <h3 class="program-list__title">Morning workshop</h3>
-            <div class="speaker">
-              <img src="img/speakers/program-speaker.jpg" alt="speaker photo" width="50" height="50">
-              <p class="speaker__information">
-                <span class="speaker__name">Sarah Lewin,</span> creative director in <a href="#" class="speaker__company">DD agency</a>
+          </li>
+          <li class="program-list__item">
+            <span class="program-list__time">10:15 – 11:30</span>
+            <div class="program-list__information">
+              <h3 class="program-list__title">Morning workshop</h3>
+              <div class="speaker">
+                <img src="img/speakers/program-speaker.jpg" alt="speaker photo" width="50" height="50">
+                <p class="speaker__information">
+                  <span class="speaker__name">Sarah Lewin,</span> creative director in <a href="#" class="speaker__company">DD agency</a>
+                </p>
+              </div>
+              <p class="program-list__description">
+                Lettering workshop with guru of pens, brushes, colapens, bamboo dip pens and other instrunents. Sarah will introduce you different styles in writing and show you how to create your own handmade lettering tools.
               </p>
             </div>
-            <p class="program-list__description">
-              Lettering workshop with guru of pens, brushes, colapens, bamboo dip pens and other instrunents. Sarah will introduce you different styles in writing and show you how to create your own handmade lettering tools.
-            </p>
-          </div>
-        </li>
-        <li class="program-list__item">
-          <span class="program-list__time">11:30 – 12:30</span>
-          <div class="program-list__information">
-            <h3 class="program-list__title">Dinner</h3>
-          </div>
-        </li>
-      </ul>
+          </li>
+          <li class="program-list__item">
+            <span class="program-list__time">11:30 – 12:30</span>
+            <div class="program-list__information">
+              <h3 class="program-list__title">Dinner</h3>
+            </div>
+          </li>
+        </ul>
+      </div>
+<!-- program second day -->
+      <div class="program-day" id="day2">
+        <p class="section-description">Wednesday, March 15</p>
+        <ul class="program-list">
+          <li class="program-list__item">
+            <span class="program-list__time">08:00 – 08:30</span>
+            <div class="program-list__information">
+              <h3 class="program-list__title">Opening the Conference</h3>
+            </div>
+          </li>
+          <li class="program-list__item">
+            <span class="program-list__time">08:30 – 10:00</span>
+            <div class="program-list__information">
+              <h3 class="program-list__title">
+                Talks about self-development in design and revolutions in minds at the begining of 20's
+              </h3>
+              <div class="speaker">
+                <img src="img/speakers/program-speaker-2.jpg" alt="speaker photo" width="50" height="50">
+                <p class="speaker__information">
+                  <span class="speaker__name">Alex Larkins,</span> projects manager in <a href="#" class="speaker__company">Pixels</a>
+                </p>
+              </div>
+              <p class="program-list__description">
+                How to be a graphic designer and not to lose your soul. Alex will share his experience about the process of making himself as a professional, ups and downs, searching of personal style and aproash. Also there will be a conversation of controversial points in whole conception of design like: what if it is not so hot replica of decree of nature?
+              </p>
+            </div>
+          </li>
+          <li class="program-list__item">
+            <span class="program-list__time">10:15 – 11:30</span>
+            <div class="program-list__information">
+              <h3 class="program-list__title">Morning workshop</h3>
+              <div class="speaker">
+                <p class="speaker__information">
+                  <span class="speaker__name">Sarah Lewin,</span> creative director in <a href="#" class="speaker__company">DD agency</a>
+                </p>
+              </div>
+              <p class="program-list__description">
+                Lettering workshop with guru of pens, brushes, colapens, bamboo dip pens and other instrunents. Sarah will introduce you different styles in writing and show you how to create your own handmade lettering tools.
+              </p>
+            </div>
+          </li>
+          <li class="program-list__item">
+            <span class="program-list__time">11:30 – 12:30</span>
+            <div class="program-list__information">
+              <h3 class="program-list__title">Dinner</h3>
+            </div>
+          </li>
+        </ul>
+      </div>
     </div>
   </section>
-  <section id="map" class="map">
-    
-  </section>
+  <section id="map" class="map"></section>
 
+
+<script>
+  // background header on scroll
+  var head = document.getElementById('header');
+  var topHead = head.offsetTop;
+
+  function backgroundNav() {
+    if(window.scrollY > topHead) {
+      head.classList.add('active-header');
+    }
+    else {
+      head.classList.remove('active-header');
+      for( var i = 0; i < links.length; i++) {
+        links[i].classList.remove('active-link');
+      }
+    }
+  }
+
+  window.addEventListener('scroll', backgroundNav);
+
+
+  //toggle program for days
+  var day = document.querySelectorAll('.program-days__day');
+  var program = document.querySelectorAll('.program-day');
+
+  for(var i = 0; i < day.length; i++) {
+    day[i].addEventListener('click', function(e){
+    event.preventDefault();
+      for(var i = 0; i < day.length; i++) {
+        day[i].classList.remove('active-day');
+        program[i].classList.remove('active-program');
+      }
+      this.classList.add('active-day');
+      document.querySelector(this.getAttribute('data-info')).classList.add('active-program');
+    });
+  }
+
+  var burgerBtn = document.querySelector(".mobile-btn");
+  var mobileMenu = document.querySelector(".mobile-block");
+  var burgerItems = burgerBtn.querySelectorAll('.mobile-btn__item');
+  var links = document.querySelectorAll('.navigation__link');
+  var logo = document.querySelector('.logo');
+
+
+  burgerBtn.addEventListener('click', function(){
+    mobileMenu.classList.toggle('active-menu');
+    burgerItems[0].classList.toggle('rotate-left');
+    burgerItems[1].classList.toggle('hidden');
+    burgerItems[2].classList.toggle('rotate-right');
+
+    for( var i = 0; i < links.length; i++) {
+    links[i].addEventListener('click', function(){
+        mobileMenu.classList.remove('active-menu');
+        burgerItems[0].classList.remove('rotate-left');
+        burgerItems[1].classList.remove('hidden');
+        burgerItems[2].classList.remove('rotate-right');
+    }); 
+    };
+  }); 
+
+  if( window.innerWidth > 900) {
+    for( var i = 0; i < links.length; i++) {
+    links[i].addEventListener('click', function(){
+
+      for( var i = 0; i < links.length; i++) {
+        if(links[i].classList.contains('active-link')) {
+          links[i].classList.remove('active-link');
+        } else {
+          continue;
+        }
+      };
+      this.classList.add('active-link');
+      });
+    };
+  };
+
+  logo.addEventListener('click', function(){
+    for( var i = 0; i < links.length; i++) {
+      links[i].classList.remove('active-link');
+    }
+  });
+
+
+
+</script>
 
 <script src="js/map.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCL_8BzhWijDnxRViCzXvfwEdO4-rkw5Tk&callback=initMap" async defer></script>

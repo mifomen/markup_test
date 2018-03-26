@@ -17,6 +17,10 @@
 .logo {
   font-size: 24px;
   font-weight: 600;
+
+  @media screen and (max-width: 900px) {
+    font-size: 16px;
+  }
 }
 
 
@@ -25,9 +29,14 @@
   width: 100%;
   height: 100px;
   position: fixed;
-  background-color: #fff;
-  box-shadow: rgba(0,0,0,.13) 0 4px 16px;
+  /*background-color: #fff;
+  box-shadow: rgba(0,0,0,.13) 0 4px 16px;*/
   z-index: 5;
+  transition: all .5s ease;
+
+  @media screen and (max-width: 900px) {
+    height: 50px;
+  }
 
   > .wrapper {
     height: 100%;
@@ -35,7 +44,85 @@
     justify-content: flex-start;
     align-items: center;
     padding-top: 0;
+
+    @media screen and (max-width: 900px) {
+      position: relative;
+      justify-content: center;
+    }
   }
+}
+
+.mobile-btn {
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 50px;
+  height: 50px;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  background-color: #000;
+  cursor: pointer;
+
+  @media screen and (max-width: 900px) {
+    display: flex;
+  }
+
+  &__item {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    transition: all .5s ease;
+  }
+}
+
+.active-header {
+  background-color: #fff;
+  box-shadow: rgba(0,0,0,.13) 0 4px 16px;
+}
+
+.mobile-block {
+  display: flex;
+  margin-left: auto;
+  transition: transform .5s ease;
+
+  @media screen and (max-width: 900px) {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    min-height: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 20vh;
+    align-items: center;
+    top: 49px;
+    left: 0;
+    background-color: #ffffff;
+    transform: translateX(-100%);
+  }
+}
+
+.hidden {
+  transition: visibility .1s ease;
+  visibility: hidden;
+}
+
+.rotate-left {
+  transform-origin: left;
+  transform: rotate(43deg);
+  margin-left: 3px;
+}
+
+.rotate-right {
+  transform-origin: left;
+  transform: rotate(-43deg);
+  margin-left: 3px;
+}
+
+.active-menu {
+  transform: translateX(0);
 }
 
 
@@ -44,13 +131,27 @@
   margin-left: auto;
   margin-right: 25px;
 
+  @media screen and (max-width: 900px) {
+    margin: 0;
+  }
+
   &__list {
     display: flex;
     list-style-type: none;
+
+    @media screen and (max-width: 900px) {
+      flex-direction: column;
+    }
   }
 
   &__item {
     margin-right: 25px;
+
+    @media screen and (max-width: 900px) {
+      margin-right: 0;
+      text-align: center;
+      margin: 5vh;
+    }
   }
 
   &__link {
@@ -60,9 +161,33 @@
     letter-spacing: 1px;
     text-transform: uppercase;
     letter-spacing: 2.5px;
+
+    @media screen and (max-width: 900px) {
+      display: inline-block;
+      font-size: 4vh;
+      position: relative;
+
+      &::after {
+        position: absolute;
+        content: "";
+        width: 0;
+        height: 2px;
+        background-color: #032123;
+        bottom: -1vh;
+        left: 0;
+        transition: width .5s ease;
+      }
+
+      &:hover::after {
+        width: 100%;
+      }
+    }
   }
 }
 
+.active-link {
+  color: brown;
+}
 
 /* lang */
 .toggle-lang {

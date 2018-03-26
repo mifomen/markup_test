@@ -1,18 +1,18 @@
 .program {
   padding-top: 120px;
-  padding-bottom: 150px;
+  padding-bottom: 100px;
 
   .section-title {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 
     @media screen and (max-width: 640px) {
-      margin-bottom: 20px;
+      margin-bottom: 0px;
     }
   }
 
   @media screen and (max-width: 400px) {
-    padding-top: 90px;
-    padding-bottom: 90px;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }  
 }
 
@@ -164,6 +164,7 @@
   img {
     border-radius: 50%;
     margin-right: 20px;
+    object-fit: cover;
   }
 
   &__information {
@@ -193,3 +194,13 @@
     font-weight: 300;
   }
 }
+
+.program-day {
+  display: none;
+}
+
+.active-program {
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 50px;
+ }
