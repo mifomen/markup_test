@@ -1,0 +1,41 @@
+.partners {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  outline: 2px solid darkblue;
+  padding: 10%;
+  // *{
+  //   outline: 2px solid darkblue;
+  // }
+  &__title {
+    width: 100%;
+    text-align: center;
+    margin-bottom:1%;
+
+    font-size: 32px;
+
+  }
+  &__description {
+    font-size: 18px;
+
+  }
+  &__collection {
+    margin-top: 1%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    @media #{$mobile} {
+      flex-wrap: wrap;
+    }
+  }
+  &__img {
+   
+    height: 150px;
+     width: auto;
+    @media #{$tablet} {
+      width: auto;
+      height: 100px;
+    }
+  }
+}

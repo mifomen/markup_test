@@ -2,13 +2,20 @@
 body {
   margin:0;
   padding: 0;
-  font-family: $fontR;
-  height: 5000px;
+  font-family: $fontRoboto;
+  // height: 5000px;
 }
-
+.blur-effect {
+ 
+  filter: blur(0px);
+}
+.blur--nojs .blur-effect{
+  filter: blur(0px);
+}
 @import "blocks/variabls.scss";
 @import "blocks/header.scss";
 @import "blocks/main.scss";
+@import "blocks/partners.scss";
 @import "blocks/gallery.scss";
 @import "blocks/intro.scss";
 @import "blocks/map.scss";
