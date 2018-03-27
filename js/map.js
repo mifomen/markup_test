@@ -1,7 +1,7 @@
 function initMap() {
-    var uluru = {lat: 52.229079, lng: 21.014248};
+    var uluru = {lat: 48.137079, lng: 11.576006};
     var map = new google.maps.Map(document.getElementById('map'), {
-      zoom: 14,
+      zoom: 17,
       center: uluru,
       styles: [
   {
@@ -319,7 +319,7 @@ function initMap() {
     });
 
     var infowindow = new google.maps.InfoWindow({
-      content: 'Nowogrodzka 27, Warszaw'
+      content: 'Germany, Munich, Marienplatz'
     });
 
     var marker = new google.maps.Marker({
