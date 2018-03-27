@@ -4,20 +4,33 @@ body {
   padding: 0;
   font-family: $fontRoboto;
   // height: 5000px;
+  display: flex;
+  flex-direction: column;
 }
 .blur-effect {
- 
   filter: blur(0px);
 }
 .blur--nojs .blur-effect{
   filter: blur(0px);
 }
+ .fixed {
+   width: 100%;
+   position: fixed;
+   top: 0;
+   z-index: 5;
+  // overflow-x: auto;
+  border: 5px solid darkorange;
+}
+
+
 @import "blocks/variabls.scss";
-@import "blocks/header.scss";
-@import "blocks/main.scss";
-@import "blocks/partners.scss";
-@import "blocks/gallery.scss";
-@import "blocks/intro.scss";
+@import "blocks/001_header.scss";
+@import "blocks/002_event-in-header.scss";
+@import "blocks/timer.scss";
+@import "blocks/003_description-of-event.scss";
+@import "blocks/004_partners.scss";
+@import "blocks/005_gallery.scss";
+@import "blocks/006_conference-program.scss";
 @import "blocks/map.scss";
 @import "blocks/program.scss";
 @import "blocks/sponsors.scss";

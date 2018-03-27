@@ -8,6 +8,7 @@ var BlurEffect=document.querySelector(".main-header");
 document.addEventListener("DOMContentLoaded",function(a){
  MainMenu.classList.remove("main-menu--nojs");
  BlurEffect.classList.remove("blur-effect");
+ Timer();
 });
 
 ButtonOfMenu.addEventListener("click",function(evt){
@@ -23,16 +24,42 @@ document.addEventListener("scroll",function(a){
 //gallery
 var Gallery = document.querySelector(".gallery");
 var  GalleryWrapper = document.querySelector(".gallery__wrapper");
-var WidthViewPortPicture = '-50vw';
+var WidthOfPicture = '-50vw';
 
 Gallery.addEventListener("click",function(evt){
     evt.preventDefault();
-    var WidthOnePicture = 'translateX(' + WidthViewPortPicture+ ')';
+    var WidthOnePicture = 'translateX(' + WidthOfPicture+ ')';
     GalleryWrapper.style.transform = WidthOnePicture;
-    WidthViewPortPicture = parseInt(WidthViewPortPicture) - parseInt(50);
-    WidthViewPortPicture += 'vw';
-    if (parseInt(WidthViewPortPicture)<-150) {
-      WidthViewPortPicture='0vh';
+    WidthOfPicture = parseInt(WidthOfPicture) - parseInt(50);
+    WidthOfPicture += 'vw';
+    if (parseInt(WidthOfPicture)<-150) {
+      WidthOfPicture='0vh';
     }
 console.log(WidthOnePicture);
 });
+
+//timer
+timeend= new Date(2018, 02, 27,12,0,0,0);
+ // time = new Date(year, month, date hours, minutes, seconds, ms)
+
+function Timer() {
+  today = new Date();
+  today = Math.floor((timeend-today)/1000);
+  tsec=today%60;
+  today=Math.floor(today/60); 
+  if(tsec<10)tsec='0'+tsec;
+  tmin=today%60;
+  today=Math.floor(today/60);
+  if(tmin<10)tmin='0'+tmin;
+  thour=today%24; 
+  today=Math.floor(today/24);
+
+
+  document.getElementById('day').innerHTML=today;
+  document.getElementById('hour').innerHTML=thour;
+  document.getElementById('min').innerHTML=tmin;
+  document.getElementById('sec').innerHTML=tsec;
+  window.setTimeout("Timer()",1000);
+
+  // if (day<0) break;
+}

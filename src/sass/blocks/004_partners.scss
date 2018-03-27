@@ -3,8 +3,10 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  outline: 2px solid darkblue;
-  padding: 10%;
+  // outline: 2px solid darkblue;
+  // outline-offset: -5px;
+  // border: 2px solid green;
+  // padding: 10%;
   // *{
   //   outline: 2px solid darkblue;
   // }
@@ -12,13 +14,10 @@
     width: 100%;
     text-align: center;
     margin-bottom:1%;
-
     font-size: 32px;
-
   }
   &__description {
     font-size: 18px;
-
   }
   &__collection {
     margin-top: 1%;
@@ -30,9 +29,8 @@
     }
   }
   &__img {
-   
-    height: 150px;
-     width: auto;
+   height: 150px;
+   width: auto;
     @media #{$tablet} {
       width: auto;
       height: 100px;

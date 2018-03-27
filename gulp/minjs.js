@@ -1,7 +1,7 @@
 var gulp = require('gulp');
 var uglify = require("gulp-uglify");
 var rename = require("gulp-rename");
-
+var plumber = require('gulp-plumber');
 
 var del = require("del");
 var run = require("run-sequence");
@@ -20,6 +20,7 @@ gulp.task("copy-js", function() {
 });
 gulp.task("minjs", function() {
   gulp.src("src/js/main.js")
+    .pipe(plumber())
     .pipe(uglify())
     // .pipe(rename('min.js'))
     .pipe(gulp.dest("build/js"));
