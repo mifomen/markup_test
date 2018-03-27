@@ -39,18 +39,24 @@ console.log(WidthOnePicture);
 });
 
 //timer
-timeend= new Date(2018, 02, 27,12,0,0,0);
+timeend= new Date(2018, 08, 28,17,0,0,0);
  // time = new Date(year, month, date hours, minutes, seconds, ms)
 
 function Timer() {
   today = new Date();
+  // console.log('today ' + today)
   today = Math.floor((timeend-today)/1000);
+
+  if (today<0) {
+    return true;
+  } else {
+  // console.log('today ' + today)
   tsec=today%60;
   today=Math.floor(today/60); 
-  if(tsec<10)tsec='0'+tsec;
+  // if(tsec<10)tsec='0'+tsec;
   tmin=today%60;
   today=Math.floor(today/60);
-  if(tmin<10)tmin='0'+tmin;
+  // if(tmin<10)tmin='0'+tmin;
   thour=today%24; 
   today=Math.floor(today/24);
 
@@ -60,6 +66,6 @@ function Timer() {
   document.getElementById('min').innerHTML=tmin;
   document.getElementById('sec').innerHTML=tsec;
   window.setTimeout("Timer()",1000);
-
+}
   // if (day<0) break;
 }
