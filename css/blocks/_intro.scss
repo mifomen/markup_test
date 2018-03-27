@@ -8,7 +8,11 @@
   -webkit-background-size: cover;
   background-size: cover;
 
-  .wrapper {
+  > .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    height: 100%;
     padding-top: 20vh;
   }
 }
@@ -215,6 +219,7 @@
   max-width: 997px;
   width: 100%;
   margin: 0 auto;
+  margin-top: auto;
   padding: 50px 0;
   text-align: center;
 
@@ -262,6 +267,7 @@
 /* information block */
 .information-block {
   max-width: 1060px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
