@@ -1,18 +1,23 @@
 .gallery {
   background-color: rgb(76, 69, 214);
-  height: 55vh;
-  display: block;
-  padding-top: 10%;
+  height: 500px;
+  display: flex;
+  
   padding-left: 20%;
   overflow: hidden;
   // * {
   //   outline: 2px solid white;
   // }
   &__wrapper {
-   width:400%;
+    // border: 10px solid green;
+   // width:30000px;
    transition: 300ms ease;
+   margin-top: auto;
+   margin-bottom: auto;
+   display: flex;
   }
   &__img {
+    float:left;
     height: 45vh;
     width: auto;
     margin-right: 1%;

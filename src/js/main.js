@@ -24,29 +24,28 @@ document.addEventListener("scroll",function(a){
 //gallery
 var Gallery = document.querySelector(".gallery");
 var  GalleryWrapper = document.querySelector(".gallery__wrapper");
-var WidthOfPicture = '-50vw';
+var WidthOfPicture = '-40vw';
 
 Gallery.addEventListener("click",function(evt){
     evt.preventDefault();
     var WidthOnePicture = 'translateX(' + WidthOfPicture+ ')';
     GalleryWrapper.style.transform = WidthOnePicture;
-    WidthOfPicture = parseInt(WidthOfPicture) - parseInt(50);
+    WidthOfPicture = parseInt(WidthOfPicture) - parseInt(30);
     WidthOfPicture += 'vw';
-    if (parseInt(WidthOfPicture)<-150) {
+    if (parseInt(WidthOfPicture)<-110) {
       WidthOfPicture='0vh';
     }
 console.log(WidthOnePicture);
 });
 
 //timer
-timeend= new Date(2018, 08, 28,17,0,0,0);
+timeend= new Date(2018, 02, 28,17,45,0,0);
  // time = new Date(year, month, date hours, minutes, seconds, ms)
 
 function Timer() {
   today = new Date();
   // console.log('today ' + today)
   today = Math.floor((timeend-today)/1000);
-
   if (today<0) {
     return true;
   } else {

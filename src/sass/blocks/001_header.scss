@@ -1,34 +1,44 @@
 .main-header {
-  background-image: url(../img/background.jpg);
+  background-image: url(../img/background.j1pg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
   background-color: rgba(0,0,0,0.5);
   background-blend-mode: darken;
   height: 100vh;
-  // transition: 3s ease;
-  display: flex;
-  flex-wrap:wrap;
-  
+  outline: 2px solid #eda;
+  outline-offset: -5px;
+  disaplay:flex;
+  flex-direction: row;
 
+  @media #{$tablet} {
+    // height: 800px;
+  }
+  &__section-one {
+    // border: 22px solid green;
+  }
+  &__section-two {
+    // align-self: flex-end;
+    // border: 22px solid darkorange;
+    height: 100%;
+    padding: 0 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
-
 .main-menu {
-//  * {
-//   outline: 2px solid #eda;
-// }
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
     font-family: $fontRoboto;
     display: flex;
     flex-wrap: wrap;
     position: relative;
     background-color: rgba(#fff,1);
-    // height: 10vh;
-    width: 100%;
-  @media #{$tablet} {
-     justify-content: center;;
-  }
+    // width: 100%;
+    @media #{$tablet} {
+       justify-content: center;
+    }
   &__toggle {
       display: none;
       transition: 300ms ease;
@@ -91,6 +101,7 @@
     // height: 50px;
     @media #{$tablet} {
       display: none;
+
 
     }
     @media #{$mobile} {
