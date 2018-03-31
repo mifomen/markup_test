@@ -39,7 +39,7 @@ console.log(WidthOnePicture);
 });
 
 //timer
-timeend= new Date(2018, 02, 28,17,45,0,0);
+timeend= new Date(2019, 02, 28,17,45,0,0);
  // time = new Date(year, month, date hours, minutes, seconds, ms)
 
 function Timer() {
