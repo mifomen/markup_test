@@ -7,6 +7,7 @@
   border:22px solid darkorange;
   display: flex;
   padding: 0 7%;
+  flex-wrap: wrap;
   @media #{$tablet} {
     flex-direction: column;
     padding:0;

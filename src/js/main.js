@@ -39,7 +39,7 @@ console.log(WidthOnePicture);
 });
 
 //timer
-timeend= new Date(2019, 02, 28,17,45,0,0);
+timeend= new Date(2020, 02, 28,17,45,0,0);
  // time = new Date(year, month, date hours, minutes, seconds, ms)
 
 function Timer() {
@@ -68,3 +68,29 @@ function Timer() {
 }
   // if (day<0) break;
 }
+
+//conference prgram button toggle
+
+var ButtonForFirstDayOfConference = document.querySelector(".btn-day-one");
+var ButtonForSecondDayOfConference = document.querySelector(".btn-day-two");
+
+var ConferenceProgramDayOne = document.querySelector(".event__day-one");
+var ConferenceProgramDayTwo = document.querySelector(".event__day-two");
+
+ButtonForFirstDayOfConference.addEventListener("click",function(evt){
+  evt.preventDefault(evt);
+  ConferenceProgramDayTwo.classList.add('display-none');
+  ConferenceProgramDayOne.classList.remove('display-none');
+ButtonForFirstDayOfConference.classList.add('intro__button-first');
+ButtonForSecondDayOfConference.classList.remove('intro__button-first');
+
+});
+ButtonForSecondDayOfConference.addEventListener("click",function(evt){
+  evt.preventDefault(evt);
+  ConferenceProgramDayOne.classList.add('display-none');
+  ConferenceProgramDayTwo.classList.remove('display-none');
+ButtonForFirstDayOfConference.classList.remove('intro__button-first');
+ButtonForSecondDayOfConference.classList.add('intro__button-first');
+
+});
+
