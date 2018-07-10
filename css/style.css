@@ -22,7 +22,7 @@
   width: 100%;
   min-height: 100vh;
   height: 100%;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.6))), url("../../img/background.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.6))), url("../img/background.jpg");
   background-image: linear-gradient(top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url("../../img/background.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -348,11 +348,11 @@
           width: 40px;
           height: 40px; } }
     .information-block__item--date::before {
-      background-image: url(../../img/icon/calendar.svg); }
+      background-image: url(../img/icon/calendar.svg); }
     .information-block__item--tme::before {
-      background-image: url(../../img/icon/clock.svg); }
+      background-image: url(../img/icon/clock.svg); }
     .information-block__item--place::before {
-      background-image: url(../../img/icon/marker.svg); }
+      background-image: url(../img/icon/marker.svg); }
 
 .event-title {
   font-size: 72px;
@@ -701,15 +701,15 @@ input[type='checkbox'] {
     -webkit-box-sizing: border-box;
     box-sizing: border-box; }
     .sponsors__item--sponsor1 {
-      background-image: url("../../img/sponsors/laspen.jpg"); }
+      background-image: url("../img/sponsors/laspen.jpg"); }
     .sponsors__item--sponsor2 {
-      background-image: url("../../img/sponsors/crop.jpg"); }
+      background-image: url("../img/sponsors/crop.jpg"); }
     .sponsors__item--sponsor3 {
-      background-image: url("../../img/sponsors/blob.png"); }
+      background-image: url("../img/sponsors/blob.png"); }
     .sponsors__item--sponsor4 {
-      background-image: url("../../img/sponsors/miiissy.png"); }
+      background-image: url("../img/sponsors/miiissy.png"); }
     .sponsors__item--sponsor5 {
-      background-image: url("../../img/sponsors/peppermint.jpg"); }
+      background-image: url("../img/sponsors/peppermint.jpg"); }
 
 .map {
   max-width: 100%;
